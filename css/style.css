@@ -104,4 +104,85 @@ p {
   line-height: 1.7;
 }
 
+.footer {
+  margin-top: 60px;
+  padding: 24px 20px;
+  background-color: #eef2ff;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #2a2494;
+}
+
+/* ===== Search & Filters ===== */
+
+.search-section {
+  margin: 40px 0;
+  padding: 30px;
+  background-color: #eef2ff;
+  border: 1px solid #c7d2fe;
+  border-radius: 16px;
+}
+
+.search-section h2 {
+  margin-bottom: 20px;
+  color: #2a2494;
+  font-size: 24px;
+}
+
+/* Aligns the 3 filter inputs in equal columns with the search button sized to its content, pinned to the bottom edge */
+.search-filters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) auto;
+  gap: 15px;
+  align-items: end;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.filter-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #c7d2fe;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #1f2937;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.filter-group select:focus {
+  border-color: #2a2494;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(42, 36, 148, 0.12);
+}
+
+#search-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2a2494;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#search-button:hover {
+  background-color: #40378f;
+}
 /* -----------------------------This is where yahia should add his CSS -----------------------------------------------*/
