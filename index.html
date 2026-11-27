@@ -1,54 +1,102 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kariera - Find Your Opportunity</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- Navigation Bar -->
     <header>
-      <nav class="navbar">
-        <a href="index.html" class="logo">
-          <img src="Images\logo-full.png" alt="Kariera logo" />
-        </a>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="favorites.html">Favorites</a></li>
-          <li><a href="apply.html">Apply</a></li>
-        </ul>
-      </nav>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="Images/logo-full.png" alt="Kariera logo" />
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="apply.html">Apply</a></li>
+            </ul>
+        </nav>
     </header>
-
     <!-- Main Content -->
     <main class="container">
-      <section class="hero">
-        <h1>Find Your Next Opportunity</h1>
-        <p>
-          Discover internships and job opportunities that match your ambitions
-        </p>
-      </section>
-      <!-- Offers will be displayed here later -->
-      <section id="offers-container">
-        <h2>Latest Opportunities</h2>
-      </section>
+        <section class="hero">
+            <h1>Find Your Next Opportunity</h1>
+            <p>
+                Discover internships and job opportunities that match your ambitions
+            </p>
+        </section>
+        <!-- ===== Search & Filters Section ===== -->
+        <section class="search-section">
+            <h2>Find Your Opportunity</h2>
+            <div class="search-filters">
+                <!-- Domain Filter -->
+                <div class="filter-group">
+                    <label for="domain-filter">Domain</label>
+                    <select id="domain-filter">
+                        <option value="">All Domains</option>
+                        <option value="IT & Development">IT & Development</option>
+                        <option value="Marketing & Communication">Marketing & Communication</option>
+                        <option value="Finance & Accounting">Finance & Accounting</option>
+                        <option value="Design & Creative">Design & Creative</option>
+                        <option value="Engineering & Industry">Engineering & Industry</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Sales & Commerce">Sales & Commerce</option>
+                        <option value="Human Resources">Human Resources</option>
+                    </select>
+                </div>
+                <!-- Location Filter -->
+                <div class="filter-group">
+                    <label for="location-filter">Location</label>
+                    <select id="location-filter">
+                        <option value="">All Locations</option>
+                        <option value="Casablanca">Casablanca</option>
+                        <option value="Rabat">Rabat</option>
+                        <option value="Marrakech">Marrakech</option>
+                        <option value="Tangier">Tangier</option>
+                        <option value="Agadir">Agadir</option>
+                    </select>
+                </div>
+                <!-- Contract Type Filter -->
+                <div class="filter-group">
+                    <label for="contract-filter">Contract Type</label>
+                    <select id="contract-filter">
+                        <option value="">All Contract Types</option>
+                        <option value="Initiation Internship">Initiation Internship</option>
+                        <option value="PFA Internship">PFA Internship</option>
+                        <option value="PFE Internship">PFE Internship</option>
+                        <option value="CDI">CDI</option>
+                        <option value="CDD">CDD</option>
+                        <option value="Freelance">Freelance</option>
+                    </select>
+                </div>
+                <!-- Search Button -->
+                <button type="button" id="search-button">Search</button>
+            </div>
+        </section>
+        <!-- Offers will be displayed here later -->
+        <section id="offers-container">
+            <h2>Latest Opportunities</h2>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-      <p>&copy; 2026 Kariera. All rights reserved</p>
+        <p>&copy; 2026 Kariera. All rights reserved</p>
     </footer>
 
     <!--JS files-->
     <script src="js/data.js"></script>
     <script src="js/favorites.js"></script>
     <script src="js/app.js"></script>
-  </body>
+</body>
+
 </html>
