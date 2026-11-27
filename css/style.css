@@ -1,8 +1,107 @@
 /* -----------------------------This is where I should my CSS -----------------------------------------------*/
+
+/* :root selects the main HTML element.
+   We use it to define CSS variables that can be reused
+   throughout the stylesheet, keeping colors consistent. */
 :root {
-  --primary-color: #4f46e5;
-  --primary-hover: #4338ca;
+  --primary-color: #2a2494;
+  --primary-hover: #40378f;
   --light-indigo: #eef2ff;
   --text-color: #1f2937;
 }
-/* -----------------------------This is where yahia's should add his CSS -----------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Makes the width and height include padding and borders.This makes it easier to control the size of elements. */
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  background: #f9fafb;
+  color: var(--text-color);
+  line-height: 1.6; /* Controls the vertical space between lines of text.A value of 1.6 makes text easier to read. */
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700; /* bold */
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 16px;
+  color: #6b7280;
+}
+
+.navbar {
+  display: flex; /* arrange its children in a row. */
+  justify-content: space-between; /* Places the children at opposite ends, with equal space between them. */
+  align-items: center; /* Aligns the children vertically in the center. */
+  padding: 20px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Website logo */
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  object-fit: contain; /* Scales the image to fit fully inside its box without cropping or distortion */
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+/* Hover effect */
+.nav-links a:hover {
+  color: var(--primary-hover);
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  margin: 30px 0;
+  background-image: url("../Images/hero-bg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 600px; /* Limit width on desktop while staying responsive on mobile */
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* -----------------------------This is where yahia should add his CSS -----------------------------------------------*/
