@@ -1,18 +1,46 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"> initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Favorites - Kariera</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Kariera</a>
+
+        <div>
+            <a href="index.html">Home</a>
+            <a href="favorites.html">Favorites</a>
+        </div>
+    </nav>
+
+    <!-- Main content -->
     <main class="container">
-    <h1>My Favorite Offers</h1>
 
-    <div id="favorites-container"></div>
-</main>
-    
+        <h1>My Favorites</h1>
 
-<script src="js/data.js"></script>
-<script src="js/favorites.js"></script>
+        <p>
+            Here you can find all the job offers
+            you have saved.
+        </p>
+
+        <!-- JavaScript will display favorite offers here -->
+        <div id="favorites-container"></div>
+
+    </main>
+
+    <!-- JavaScript files -->
+    <script src="js/data.js"></script>
+    <script src="js/favorites.js"></script>
+
 </body>
 </html>
